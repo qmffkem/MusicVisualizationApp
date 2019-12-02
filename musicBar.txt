@@ -9,5 +9,4 @@ class musicBar{
 	function addData(BulbData, time){
 		add pair of bulbData and time on the builbTimePair based on the time.
 	}
-
 }
