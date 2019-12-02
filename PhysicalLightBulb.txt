@@ -1,0 +1,13 @@
+//PhysicalLightBulb. Class for sending data through bluetooth to the actual bulb.
+Class PhysicalLightBulb
+	Declare BulbData currentBulbData
+
+	Function reset()
+		Device.Bluetooth.sendData(currentBulbData.connectionPort, NULL)
+	
+	Function setValues(BulbData)
+		currentBulbData = BulbData
+		Device.Bluetooth.sendData(currentBulbData.connectionPort, currentBulbData)
+	
+	Function verifyConnection()
+		return Device.Bluetooth.verifyConnection(currentBulbData.connectionPort)

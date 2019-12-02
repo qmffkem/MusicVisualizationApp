@@ -6,7 +6,20 @@ initialize int audioProgress
 initialize Button back
 
 function startDemo(AudioElement, Visualization) {
-	start AudioElement based on Visualization
+		start AudioElement based on Visualization
 	}
+
+function addMusicBar() {
+
+}
+
+function onClick(Button) {
+	case 'playDemo' :
+		this.startDemo
+		
+	case 'back'
+		app.setpage('edit')
+	}
+	
 
 }
