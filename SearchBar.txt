@@ -1,0 +1,5 @@
+Class SearchBar{
+
+Declare String searchText
+
+}
