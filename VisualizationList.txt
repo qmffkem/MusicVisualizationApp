@@ -1,4 +1,4 @@
-//VisualizationList
+//VisualizationList. Maps Audio(songs) to visualizations
 Class VisualizationList
 	Declare Map<AudioElement, List<Visualization>> //map each song(audio element) 
 												   //to a list of possible visualizations

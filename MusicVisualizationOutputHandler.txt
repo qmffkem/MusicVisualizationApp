@@ -1,4 +1,4 @@
-//MusicVisualizationOutputHandler
+//MusicVisualizationOutputHandler. Handle Information related to what is currently being visualized
 Class MusicVisualizationOutputHandler
 	Declare Visualization currentVisualization
 	Declare AudioElement currentAudio

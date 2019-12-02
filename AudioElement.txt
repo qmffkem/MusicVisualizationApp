@@ -1,4 +1,4 @@
-//AudioElement
+//AudioElement. Store information related to a song
 Class AudioElement //A single Song (or, more generically, audio)
 	Declare Image SongImage
 	Declare String title

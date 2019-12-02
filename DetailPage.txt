@@ -1,4 +1,4 @@
-//DetailPage
+//DetailPage. Handle button pressed and UI functionality on the DetailPage.
 Class DetailPage
 	Declare Button next
 	Declare Button previous
