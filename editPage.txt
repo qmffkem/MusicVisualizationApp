@@ -12,20 +12,10 @@ class Editpage {
 		remove musicbar at the end of the expandBulbInfo
 	}
 
-	function addColor(musicBar){
-		read color from user
-		read bulbData from user
-		read time from user
-		create bulbInfo
-		add newly created bulbInfo into musicBar
-	}
-	
 	function onClick(Button){
 		case 'demo' :
 			app.setpage(button)
 			app.update()
-		case 'addcolor':
-			this.addcolor(selected object)
 		case 'addbulb' :
 			this.addMusicBar
 	}
