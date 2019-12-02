@@ -12,10 +12,13 @@ class musicBar{
 	}
 
 	function onClickAddColor(button) {
-		read color from user
-		read bulbData from user
-		read time from user
+		do
+			read color from user
+			read bulbData from user
+			read time from user
+		while( reading all three inputs)
 		create new object with the given information
-		add the new object at the end of the bulInfo list
+		get the last element from the bulbInfo list
+		add the new object at the end of the bulbInfo list
 	}
 }
