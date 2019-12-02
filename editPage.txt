@@ -2,7 +2,7 @@ class Editpage {
 	initialize list<MusicBar> expandBulbInfo
 	initialize button demoButton
 	initialize visualization visualization
-	initialize audioelement audio
+	initialize audioElement audio
 
 	function addMusicBar(){
 		add one musicbar to the end of expandBulbInfo
