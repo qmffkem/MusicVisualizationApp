@@ -1,0 +1,16 @@
+class Editpage {
+	initialize list<MusicBar> expandBulbInfo
+	initialize demoButton demoButton
+	initialize visualization visualization
+	initialize audioelement audio
+
+	addMusicBar(){
+		add one musicbar to the end of expandBulbInfo
+	}
+	
+	deleteMusicBar(){
+		remove musicbar at the end of the expandBulbInfo
+	}
+
+	
+}	
