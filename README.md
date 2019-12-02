@@ -1,5 +1,5 @@
 # MusicVisualizationApp
-pseudocode for intermediate software design class project
+Pseudocode for intermediate software design class project
 
 
 https://dev.to/flippedcoding/how-to-write-pseudo-code-2jfe

@@ -1,0 +1,39 @@
+//MusicVisualizationOutputHandler
+Class MusicVisualizationOutputHandler
+	Declare Visualization currentVisualization
+	Declare AudioElement currentAudio
+	Declare Integer progress
+	Declare List<PhysicalLightBulb> connectedBulbs
+	
+	Function initiate(audioElement, visualization)
+		currentAudio = audioElement
+		currentVisualization = visualization
+		progress = 0
+		for each LightBulb in connectedBulbs //verify the connection to every bulb or remove it
+			if not LightBulb.verifyConnection()
+				connectedBulbs.remove(LightBulb)
+				App.alert(Global.ErrorMessages.LostBulbConnect)
+			LightBulb.reset()
+	
+	Function start()
+		App.playAudio(currentAudio, progress)
+		startVisualization() //helper method below
+		
+	Function updateProgress(newProgress)
+		progress = newProgress
+		App.playAudio(currentAudio, progress)
+		
+	Function playVisualization()
+		Declare List<BulbData> currentBulbData = currentVisualization.get(progress)
+		Declare listIterator bulbIterator = currentBulbData.listIterator()
+		for each LightBulb in connectedBulbs
+			if bulbIterator.hasNext()
+				LightBulb.setValues(bulbIterator.next())
+			else
+				App.alert(Global.WarningMessages.ExcessBulbs)
+				bulbIterator.restart()
+				LightBulb.setValues(bulbIterator.next())
+		
+	Function stopVisualization()
+		App.pauseAudio(currentAudio)
+		

@@ -1,0 +1,33 @@
+//Handling of BulbData (as described by our class diagram)
+Class BulbData {
+
+	Declare Port connectionPort
+	Declare Color bulbColor
+	
+	//Like polar coordinates
+	Declare Integer orientationDegree
+	Declare Integer orientationRadius
+	
+	Declare Integer brightness
+	
+	
+	//Basic setters and getters
+	Function getPort()
+	
+	Function getColor()
+	
+	Function getOrientation()
+	
+	Function getBrightness()
+		
+	Function setPort()
+	
+	Function setColor()
+	
+	Function setOrientationDegree()
+	
+	Function setOrientationRadius
+	
+	Function setBrightness()
+		
+	

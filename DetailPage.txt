@@ -1,0 +1,43 @@
+//DetailPage
+Class DetailPage
+	Declare Button next
+	Declare Button previous
+	Declare Button play
+	Declare Button pause
+	Declare Button newVisualization
+	Declare Slider progress //standard android UI element
+	Declare List<Visualization> visualizationList
+	Declare AudioElement currentAudioElement
+	
+	Function init()
+		currentAudioElement = Global.CurrentSongList.getNext()
+		visualizationList = Global.VisualizationList.getValue(AudioElement)
+		App.addContext("Album_Image", currentAudioElement.songImage)
+		App.addContext("Visualization_List", visualizationList)
+	Function onButtonPress(ButtonPressed)
+		switch (ButtonPressed)
+			case next
+				currentAudioElement = Global.CurrentSongList.getNext()
+				visualizationList = Global.VisualizationList.getValue(AudioElement)
+			case previous
+				currentAudioElement = Global.CurrentSongList.getPrevious()
+				visualizationList = Global.VisualizationList.getValue(AudioElement)
+			case play
+				MusicVisualizationOutputHandler.initiate(currentAudioElement, visualizationList(0))
+				MusicVisualizationOutputHandler.start()
+			case pause
+				MusicVisualizationOutputHandler.stop()
+			case newVisualization
+				App.addContext(currentAudioElement)
+				App.setPage('Edit')
+	
+	Function onSliderTap(Slider tapped, Double percent)
+		MusicVisualizationOutputHandler.updateProgress(percent * currentAudioElement.duration)
+	
+	Function onMenuItemPress(MenuItem)
+		Declare Context context = MenuItem.getContext()
+		if context.tappedEdit then
+			App.addContext(currentAudioElement, context.visualization)
+			App.setPage('Edit')
+		MusicVisualizationOutputHandler.initiate(currentAudioElement, context.visualization)
+	

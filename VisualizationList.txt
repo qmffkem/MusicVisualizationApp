@@ -1,0 +1,10 @@
+//VisualizationList
+Class VisualizationList
+	Declare Map<AudioElement, List<Visualization>> //map each song(audio element) 
+												   //to a list of possible visualizations
+	Function getAll() //get every visualization
+		return Map.AllValues().union(); //union all List<Visualization> from the map.
+	
+	
+	Function getValue(AudioElement) //get all visualizations for a specific song
+		return Map.getValue(AudioElement)

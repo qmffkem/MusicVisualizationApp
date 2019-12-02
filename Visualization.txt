@@ -1,0 +1,11 @@
+//Visualization
+//Stores data about a specific visualization
+Class Visualization
+	Declare List<List<BulbData>> bulbList //inner list (List<BulbData>) is a bunch of different bulbs
+										  //outer list is time. bulbList[25] would be how all the
+										  //bulbs would be at the 25th second
+	Declare AudioElement audio
+	
+	Function GetBulbOutputAtTime(Seconds)
+		return bulbList[seconds]
+	

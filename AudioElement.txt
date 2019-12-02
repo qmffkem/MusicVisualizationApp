@@ -1,0 +1,10 @@
+//AudioElement
+Class AudioElement //A single Song (or, more generically, audio)
+	Declare Image SongImage
+	Declare String title
+	Declare Integer Duration
+	Declare String Genre
+	Declare List<String> Artists
+	Declare File audioFile
+	
+	//Standard setters and getters for each variable
