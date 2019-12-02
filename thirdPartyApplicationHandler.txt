@@ -1,0 +1,23 @@
+class thirdPartyApplicationHandler{
+	initialize ArrayList<AppID> thirdParties
+	
+	function get3rdpartyApp()
+		for( eachApplication : everyApplicationOnMachine)
+			if ( eachApplication == known music application)
+				gets eachApplication's id
+				add AppID to thirdParties
+		return thirdParties
+
+	function getSongs()
+		if (internet is not connected)
+			return error message
+		else
+			if ( thirdParties == null || thirdParties.length == 0)
+				return null;
+			initialize list<audioElement> audio
+			for( eachThirdParyApp : thirdParties )
+				if(eachThirdpartyApp.hasSong)
+					audioElement.add(eachThirdPartyApp.getSongs)
+		return list<audioElement>
+}
+
