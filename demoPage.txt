@@ -1,0 +1,12 @@
+Class demoPage {
+
+Declare Visualization currentVisualization
+Declare AudioElement currentAudio
+Delcare int audioProgress
+declare Button back
+
+function startDemo(AudioElement, Visualization){
+	add AudioElement based on Visualization
+	}
+
+}
