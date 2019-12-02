@@ -5,7 +5,9 @@ initialize AudioElement currentAudio
 initialize int audioProgress
 initialize Button back
 
-
+function startDemo(AudioElement, Visualization) {
+		start AudioElement based on Visualization
+	}
 
 function onClick(Button) {
 	case 'playDemo' :
@@ -15,8 +17,5 @@ function onClick(Button) {
 		app.setpage('edit')
 	}
 	
-	function startDemo(AudioElement, Visualization) {
-		start AudioElement based on Visualization
-	}
 
 }
