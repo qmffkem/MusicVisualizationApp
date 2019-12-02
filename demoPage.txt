@@ -1,0 +1,12 @@
+class demoPage{
+
+initialize Visualization currentVisualization
+initialize AudioElement currentAudio
+initialize int audioProgress
+initialize Button back
+
+function startDemo(AudioElement, Visualization) {
+	start AudioElement based on Visualization
+	}
+
+}

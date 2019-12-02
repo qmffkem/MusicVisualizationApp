@@ -1,0 +1,24 @@
+class musicBar{
+
+	Declare list<(bulbData, time, color) bulbInfo
+	
+	function getData(){
+		returns bulbInfo
+	}
+	
+	function addData(BulbData, time, color){
+		create bulbInfo objects with three inputs
+		add newly created object in the list based on the time
+	}
+
+	function onClickAddColor(button) {
+		do
+			read color from user
+			read bulbData from user
+			read time from user
+		while( reading all three inputs)
+		create new object with the given information
+		get the last element from the bulbInfo list
+		add the new object at the end of the bulbInfo list
+	}
+}
