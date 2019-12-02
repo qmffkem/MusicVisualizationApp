@@ -1,4 +1,4 @@
-class searchBar{
+class searchBox{
 
 Declare String searchText
 
