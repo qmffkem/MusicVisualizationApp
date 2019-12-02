@@ -1,12 +1,13 @@
 class musicBar{
 
-	Declare list<pair<BulbData, time>> bulbTimePair
+	Declare list of (bulbData, time, color) bulbInfos
 	
 	function getData(){
-		returns bulbTimePair
+		returns bulbInfos
 	}
 	
-	function addData(BulbData, time){
-		add pair of bulbData and time on the builbTimePair based on the time.
+	function addData(BulbData, time, color){
+		create bulbInfos objects with three inputs
+		add newly created object in the list based on the time
 	}
 }
