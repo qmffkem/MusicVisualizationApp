@@ -1,5 +1,0 @@
-class searchPage{
-
-Declare ArrayList<String> searchHistory
-
-}
