@@ -1,0 +1,20 @@
+Class SearchPage {
+	Declare ArrayList<audioElement> listAudio
+	Declare ArrayList<Button> details
+	Declare ArrayList<Button> addAudio
+	Declare Button yourSongs
+	Declare SearchBox searchBox
+	
+	function onButtonClick() {
+		case Button details -> go to detail page
+		case Button yourSongs -> go to song list page
+		case Button addButton -> add song to song list 
+	}
+	
+	function search(){
+		user types on search box
+		searchBox.search(user input)
+		displays resulting audioElement list on screen
+	}
+	
+}
