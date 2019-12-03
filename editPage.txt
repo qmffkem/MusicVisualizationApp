@@ -5,24 +5,24 @@ class Editpage {
 	initialize audioElement audio
 	initialize String title
 
-	function addMusicBar(){
+	function addMusicBar()
 		add a musicbar at the end of expandBulbInfo
-	}
 	
-	function deleteMusicBar(){
+	
+	function deleteMusicBar()
 		remove musicbar at the end of the expandBulbInfo
-	}
+	
 
-	function onClick(Button){
+	function onClick(Button)
 		case 'demo' :
 			app.setpage('demo')
 			app.update()
 		case 'addbulb' :
 			this.addMusicBar
-	}
 	
-	function update(){
+	
+	function update()
 		this.title = audio.title
 		this.artists = audio.artists
-	}
+	
 }	
