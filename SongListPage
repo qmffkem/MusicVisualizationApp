@@ -1,0 +1,17 @@
+Class SongListPage {
+
+	Declare ArrayList<audioElement> listAudio
+	Declare ArrayList<button> detailButtons
+	Declare boolean firstVisit
+	Declare Button Search 
+	
+	function onButtonClick() {
+		case audioButton -> go to detail page
+		case Search -> go to search page
+	}
+	
+	function tutorial() {
+		if firstVisit == true, then play tutorial
+		firstVisit == false
+	}
+}
