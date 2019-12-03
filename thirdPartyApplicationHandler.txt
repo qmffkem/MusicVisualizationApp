@@ -19,5 +19,20 @@ class thirdPartyApplicationHandler{
 				if(eachThirdpartyApp.hasSong)
 					audioElement.add(eachThirdPartyApp.getSongs)
 		return list<audioElement>
-}
 
+	function getSong(String title)
+		if (internet is not connected)
+			return error message
+		else
+			if ( thirdParties == null || thirdParties.length == 0)
+				return null;
+			initialize list<audioElement> audio
+			initialize boolean found
+			for( eachThirdParyApp : thirdParties )
+				for( eachSong : EachThirdpartyApp.getSongs)
+					if (title == eachSong)
+						found = true
+						return eachSong
+			if found == false
+				return error message
+}
