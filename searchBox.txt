@@ -1,5 +1,20 @@
-class searchBox{
-
-Declare String searchText
-
+Class SearchBox {
+	Declare String searchText
+	Declare thirdPartyApplicationHandler handler
+	Declare boolean Songs
+	Declare boolean Visualizations
+	Declare Button Songs
+	Declare Button Visualizations
+	
+	function onButtonClick() {
+		case Button Songs -> boolean Songs = true, boolean Visualizations = false
+		case Button Visualizations -> boolean Songs = false, boolean Visualizations = true
+	}
+	
+	function search(String searchText) {
+		if boolean Songs is true, then handler.getSongs(searchText)
+		if boolean Visualization is true, then load shared visualizations from cloud
+		
+		returns an ArrayList<audioElement> SearchResults
+	}
 }
